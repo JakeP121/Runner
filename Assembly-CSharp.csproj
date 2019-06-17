@@ -62,10 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DistanceSensor.cs" />
-    <Compile Include="Assets\Scripts\GeneticSequence.cs" />
-    <Compile Include="Assets\Scripts\Neural Network\Brain.cs" />
+    <Compile Include="Assets\Scripts\Neural Network\CalculationNode.cs" />
+    <Compile Include="Assets\Scripts\Neural Network\GeneticSequence.cs" />
     <Compile Include="Assets\Scripts\Neural Network\InputNode.cs" />
-    <Compile Include="Assets\Scripts\Neural Network\IntermediateNode.cs" />
+    <Compile Include="Assets\Scripts\Neural Network\NeuralNetwork.cs" />
     <Compile Include="Assets\Scripts\Neural Network\Node.cs" />
     <Compile Include="Assets\Scripts\Runner.cs" />
     <Compile Include="Assets\Scripts\SensorArray.cs" />

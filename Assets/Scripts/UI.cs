@@ -18,6 +18,8 @@ public class UI : MonoBehaviour {
     public Text successes;
     private int successCount = 0;
 
+    public Text fitness;
+
     /// <summary>
     /// Increases the generation counter
     /// </summary>
@@ -48,5 +50,14 @@ public class UI : MonoBehaviour {
     public void increaseSuccesses()
     {
         successCount++;
+    }
+
+    /// <summary>
+    /// Sets the average fitness counter
+    /// </summary>
+    /// <param name="fitness">Running group's average fitness</param>
+    public void setFitness(float fitness)
+    {
+        this.fitness.text = fitness.ToString();
     }
 }

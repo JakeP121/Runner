@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace NeuralNetwork
+namespace NeuralNetworkComponents
 {
     //
     // Abstract node class for neural network
@@ -11,6 +11,15 @@ namespace NeuralNetwork
     //
     abstract public class Node
     {
-        abstract public float getValue();
+        protected float value = 0.0f; // The value of this node 
+
+        /// <summary>
+        /// Gets the value of this node
+        /// </summary>
+        /// <returns>Value between 0 and 1</returns>
+        virtual public float getValue()
+        {
+            return value;
+        }
     }
 }

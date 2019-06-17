@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//
-// Logic for the runner GameObject
-//
 public class Runner : MonoBehaviour {
 
     public float speed = 2.0f; // Constant forward speed
     public float steeringSpeed = 30.0f; // Max turning speed
 
-    private NeuralNetwork.Brain brain = null;
+    public SensorArray sensorArray; // Distance sensors placed around front of runner
+
+    private NeuralNetworkComponents.NeuralNetwork brain = null;
     private SimulationManager manager;
 
     private float fitness = 0.0f; // How well this runner is performing 
@@ -21,9 +20,9 @@ public class Runner : MonoBehaviour {
     /// </summary>
     /// <param name="manager">Simulation manager reference to call back to upon death</param>
     /// <param name="geneticSequence">Sequence to give the brain</param>
-    public void setBrain(SimulationManager manager, NeuralNetwork.GeneticSequence geneticSequence = null)
+    public void setBrain(SimulationManager manager, NeuralNetworkComponents.GeneticSequence geneticSequence = null)
     {
-        brain = new NeuralNetwork.Brain(GetComponentInChildren<SensorArray>(), geneticSequence);
+        brain = new NeuralNetworkComponents.NeuralNetwork(5, 1, 2, geneticSequence);
         alive = true;
         this.manager = manager;
     }
@@ -35,7 +34,16 @@ public class Runner : MonoBehaviour {
             // Increase fitness every second this runner is alive
             fitness += Time.deltaTime;
 
-            move(brain.calculateSteering());
+            // Populate neural network's input with data from sensor array
+            for (int i = 0; i < sensorArray.sensors.Count; i++)
+                brain.setInput(i, sensorArray.sensors[i].getDistancePercentage());
+
+            // Get the neural network's left and right outputs
+            float turnLeft = -brain.getOutput(0);
+            float turnRight = brain.getOutput(1);
+            
+            // Combine outputs, clamp the value between -1 and 1 and move
+            move(Mathf.Clamp(turnLeft + turnRight, -1.0f, 1.0f));
         }
     }
 
