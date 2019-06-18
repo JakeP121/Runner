@@ -61,14 +61,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\DistanceSensor.cs" />
     <Compile Include="Assets\Scripts\Neural Network\CalculationNode.cs" />
     <Compile Include="Assets\Scripts\Neural Network\GeneticSequence.cs" />
     <Compile Include="Assets\Scripts\Neural Network\InputNode.cs" />
     <Compile Include="Assets\Scripts\Neural Network\NeuralNetwork.cs" />
     <Compile Include="Assets\Scripts\Neural Network\Node.cs" />
-    <Compile Include="Assets\Scripts\Runner.cs" />
-    <Compile Include="Assets\Scripts\SensorArray.cs" />
+    <Compile Include="Assets\Scripts\Racecourse\Racecourse.cs" />
+    <Compile Include="Assets\Scripts\Runner\DistanceSensor.cs" />
+    <Compile Include="Assets\Scripts\Runner\Fitness.cs" />
+    <Compile Include="Assets\Scripts\Runner\Runner.cs" />
+    <Compile Include="Assets\Scripts\Runner\SensorArray.cs" />
     <Compile Include="Assets\Scripts\SimulationManager.cs" />
     <Compile Include="Assets\Scripts\UI.cs" />
     <Reference Include="UnityEditor.StandardEvents">

@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 136838374191168628}
   - component: {fileID: 54669067875190762}
   - component: {fileID: 114687714415056364}
+  - component: {fileID: 114674081437390376}
   m_Layer: 9
   m_Name: Runner
   m_TagString: Untagged
@@ -425,7 +426,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &114232789103941812
 MonoBehaviour:
@@ -496,6 +497,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 10
   layer: Geometry
+--- !u!114 &114674081437390376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1526503546362500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e388f6c07a5c09f48a2527ae0c593995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingFitness: 1000
 --- !u!114 &114687714415056364
 MonoBehaviour:
   m_ObjectHideFlags: 1

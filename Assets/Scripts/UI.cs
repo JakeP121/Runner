@@ -12,12 +12,6 @@ public class UI : MonoBehaviour {
     public Text generation;
     private int generationCount = 0;
 
-    public Text failures;
-    private int failureCount = 0;
-
-    public Text successes;
-    private int successCount = 0;
-
     public Text fitness;
 
     /// <summary>
@@ -27,29 +21,6 @@ public class UI : MonoBehaviour {
     {
         generationCount++;
         generation.text = generationCount.ToString();
-
-        failureCount = 0;
-        failures.text = "0";
-
-        successes.text = successCount.ToString();
-        successCount = 0;
-    }
-
-    /// <summary>
-    /// Increases the failure counter
-    /// </summary>
-    public void increaseFailures()
-    {
-        failureCount++;
-        failures.text = failureCount.ToString();
-    }
-
-    /// <summary>
-    /// Increases the successes counter
-    /// </summary>
-    public void increaseSuccesses()
-    {
-        successCount++;
     }
 
     /// <summary>
