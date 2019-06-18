@@ -18,6 +18,8 @@ namespace NeuralNetworkComponents
         private List<CalculationNode[]> hiddenLayers = new List<CalculationNode[]>();
         private CalculationNode[] outputNodes;
 
+        private bool needsRecalculation = true; // Does the neural network need to be recalculated before an output can be given?
+
         /// <summary>
         /// Creates a neural network 
         /// </summary>
@@ -96,6 +98,8 @@ namespace NeuralNetworkComponents
             // Iterate through output nodes
             foreach (CalculationNode node in outputNodes)
                 node.run();
+
+            needsRecalculation = false;
         }
 
         /// <summary>
@@ -113,6 +117,8 @@ namespace NeuralNetworkComponents
             }
 
             inputNodes[index].setValue(value);
+
+            needsRecalculation = true;
         }
 
         /// <summary>
@@ -129,8 +135,10 @@ namespace NeuralNetworkComponents
                 return -9999999.0f;
             }
             
-            // Run the neural network and return the value
-            run();
+            // Only re-run the neural network if an input has changed
+            if (needsRecalculation)
+                run();
+
             return outputNodes[index].getValue();
         }
 
