@@ -57,7 +57,7 @@ namespace NeuralNetworkComponents
         /// Calculate value from all input nodes
         /// </summary>
         /// <returns>Calculated value</returns>
-        public float run()
+        public void run()
         {
             value = 0.0f;
 
@@ -67,13 +67,6 @@ namespace NeuralNetworkComponents
 
             // Affect product by bias
             value += bias;
-
-            return value;
-        }
-
-        public override float getValue()
-        {
-            return run();
         }
 
         /// <summary>

@@ -2677,10 +2677,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {fileID: 686792366}
-  speed: 20
+  speed: 1
   subjectCount: 50
   ui: {fileID: 1574338045}
-  simulationLength: 120
+  simulationLength: 60
 --- !u!4 &825930556
 Transform:
   m_ObjectHideFlags: 0

@@ -26,6 +26,12 @@ public class SimulationManager : MonoBehaviour {
         Time.timeScale = speed;
 
         createGeneration();
+
+        Runner r = gameObject.AddComponent<Runner>();
+        ANNPluginManager.newBrain(r, 6, 1, 4);
+        float[] a = ANNPluginManager.getGeneticSequence(r);
+
+        return;
 	}
 	
 	// Update is called once per frame

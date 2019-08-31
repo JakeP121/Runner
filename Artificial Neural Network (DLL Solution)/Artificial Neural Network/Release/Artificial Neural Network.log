@@ -1,0 +1,18 @@
+﻿  stdafx.cpp
+  Artificial Neural Network.cpp
+  Debug.cpp
+  NeuralNetwork.cpp
+  CalculationNode.cpp
+e:\documents\visual studio 2017\projects\artificial neural network\artificial neural network\calculationnode.cpp(6): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  dllmain.cpp
+  GeneticSequence.cpp
+e:\documents\visual studio 2017\projects\artificial neural network\artificial neural network\geneticsequence.cpp(60): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\documents\visual studio 2017\projects\artificial neural network\artificial neural network\geneticsequence.cpp(111): warning C4018: '<': signed/unsigned mismatch
+e:\documents\visual studio 2017\projects\artificial neural network\artificial neural network\geneticsequence.cpp(113): warning C4018: '<': signed/unsigned mismatch
+e:\documents\visual studio 2017\projects\artificial neural network\artificial neural network\geneticsequence.cpp(121): warning C4018: '<': signed/unsigned mismatch
+e:\documents\visual studio 2017\projects\artificial neural network\artificial neural network\geneticsequence.cpp(123): warning C4018: '<': signed/unsigned mismatch
+     Creating library E:\Documents\Visual Studio 2017\Projects\Artificial Neural Network\Release\Artificial Neural Network.lib and object E:\Documents\Visual Studio 2017\Projects\Artificial Neural Network\Release\Artificial Neural Network.exp
+  Generating code
+  All 563 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Artificial Neural Network.vcxproj -> E:\Documents\Visual Studio 2017\Projects\Artificial Neural Network\Release\Artificial Neural Network.dll

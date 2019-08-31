@@ -1,0 +1,3 @@
+﻿  dllmain.cpp
+e:\documents\visual studio 2017\projects\artificial neural network\artificial neural network\dllmain.cpp(56): warning C4715: 'getGeneticSequence_C': not all control paths return a value
+  Artificial Neural Network.vcxproj -> E:\Documents\Visual Studio 2017\Projects\Artificial Neural Network\x64\Debug\Artificial Neural Network.dll

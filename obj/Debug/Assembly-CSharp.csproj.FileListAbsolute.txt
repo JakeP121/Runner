@@ -161,8 +161,8 @@ E:\Documents\Unity Projects\Run\Temp\bin\Debug\UnityEngine.Networking.xml
 E:\Documents\Unity Projects\Run\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
 E:\Documents\Unity Projects\Run\Temp\bin\Debug\UnityEngine.HoloLens.xml
 E:\Documents\Unity Projects\Run\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
-E:\Documents\Unity Projects\Run\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
 E:\Documents\Unity Projects\Run\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 E:\Documents\Unity Projects\Run\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 E:\Documents\Unity Projects\Run\obj\Debug\Assembly-CSharp.dll
 E:\Documents\Unity Projects\Run\obj\Debug\Assembly-CSharp.pdb
+E:\Documents\Unity Projects\Run\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache

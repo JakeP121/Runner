@@ -520,9 +520,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f769e60f65f9aa4c986298dc8ebe4cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  maxSpeed: 5
+  acceleration: 0.5
   steeringSpeed: 30
   sensorArray: {fileID: 114448596947190046}
+  wallPenalty: 100
+  checkpointReward: 250
 --- !u!114 &114793948545847170
 MonoBehaviour:
   m_ObjectHideFlags: 1
